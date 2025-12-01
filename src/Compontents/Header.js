@@ -10,11 +10,10 @@ const Header = () => {
       </div>
 
       <div className="flex items-center gap-7 text-black">
-        {/* Use same path casing as in App.js */}
-        <Link to="/Home" className="cursor-pointer font-medium">Home</Link>
-        <a className="cursor-pointer font-medium">About</a>
+        <Link  className="cursor-pointer font-medium" to="/Home">Home</Link>
+        <a className="cursor-pointer font-medium" href="/about">About</a>
         <a className="cursor-pointer font-medium">Contact</a>
-        <a className="">Services</a>
+        <a className=" cursor-pointer font-medium">Services</a>
       </div>
     </div>
   );
