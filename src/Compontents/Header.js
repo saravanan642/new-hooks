@@ -1,6 +1,9 @@
 import { DiSmashingMagazine } from "react-icons/di";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+ 
 
+const navigate = useNavigate();
 const Header = () => {
   return (
     <div className="flex items-center justify-around px-12 py-6 bg-gray-400">
@@ -12,7 +15,7 @@ const Header = () => {
       <div className="flex items-center gap-7 text-black">
         <Link  className="cursor-pointer font-medium" to="/Home">Home</Link>
         <a className="cursor-pointer font-medium" href="/about">About</a>
-        <a className="cursor-pointer font-medium">Contact</a>
+        <a className="cursor-pointer font-medium " onClick={ ()=> navigate ("/contact")}>Contact</a>
         <a className=" cursor-pointer font-medium">Services</a>
       </div>
     </div>
